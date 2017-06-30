@@ -1,4 +1,18 @@
 https://github.com/guoyoujin/MySnackBar
+http://blog.csdn.net/u012810020/article/details/52108818
+
+
+简单的翻译一下：
+1）SnackBars 提供了一个轻量级的反馈操作，他们在屏幕的底部显示一条简短的信息，如果是较大的设备就显示在左下角。SnackBar出现在屏幕中所有其他元素的上方，同一时间只能显示一条SnackBar。
+2）在超时或者用户在屏幕上完成了交互的时候SnackBar会自动消失，特别是在召唤了新的表层（意思是SnackBar本来是最外层的，然后在SnackBar上又新添加了一层）或者Activity的时候。SnackBar能在屏幕上侧滑。
+3）SnackBar能包含一个action使用setAction方法
+4）你可以通过它的CallBack来得知Snackbar是显示还是隐藏
+
+从上面注释的简单介绍，我们拿它与Toast进行比较，是不是觉得SnackBar有好多优势啊：
+1.SnackBar可以自动消失，也可以手动取消(侧滑取消，但是需要在特殊的布局中，后面会仔细说)
+2.SnackBar可以通过setAction（）来与用户进行交互
+3.通过CallBack我们可以获取SnackBar的状态
+
 
 自定义属性介绍（此控件是基于google SnackBar基础上实现的，因此SnackBar所具有的属性，他都有，下面给出一些我自己用到的属性）
 name	说明
